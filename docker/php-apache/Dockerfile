@@ -42,6 +42,4 @@ RUN echo "symfony console fos:js-routing:dump --format=json --target=public/js/r
 RUN echo "composer install" >> ~/.bash_history
 RUN echo "composer update" >> ~/.bash_history
 RUN echo "symfony console" >> ~/.bash_history
-RUN echo "symfony console make:migration" >> ~/.bash_history
-RUN echo "symfony console doctrine:migrations:migrate" >> ~/.bash_history
-RUN echo "symfony console app:project:init" >> ~/.bash_history
+RUN echo "bin/console doctrine:migrations:migrate" >> ~/.bash_history

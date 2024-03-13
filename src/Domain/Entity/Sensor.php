@@ -4,6 +4,7 @@ namespace App\Domain\Entity;
 
 use App\Domain\Trait\IdTrait;
 use App\Domain\Trait\LifecycleTrait;
+use Doctrine\Common\Collections\Collection;
 
 class Sensor
 {
@@ -12,6 +13,7 @@ class Sensor
 
     private string $name;
     private string $address;
+    private Collection $measurements;
 
     public function getName(): string
     {
@@ -33,4 +35,13 @@ class Sensor
         $this->address = $address;
     }
 
+    public function getMeasurements(): Collection
+    {
+        return $this->measurements;
+    }
+
+    public function setMeasurements(Collection $measurements): void
+    {
+        $this->measurements = $measurements;
+    }
 }
