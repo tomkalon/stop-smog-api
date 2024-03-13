@@ -1,0 +1,6 @@
+admin_web_grave_index:
+  path: /admin/sensor/{page<\d+>}
+  methods: [ GET, POST ]
+  controller: App\UI\Web\Controller\SensorManagement\SensorManagementController::index
+  defaults:
+    page: 1
