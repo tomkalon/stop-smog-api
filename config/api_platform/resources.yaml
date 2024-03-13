@@ -1,2 +1,3 @@
 resources:
   App\Domain\Entity\Sensor: ~
+  App\Domain\Entity\Measurement: ~

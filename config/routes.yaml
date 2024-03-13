@@ -1,5 +1,2 @@
-controllers:
-    resource:
-        path: ../src/UI/Controller/
-        namespace: App\UI\Controller
-    type: attribute
+main_web:
+  resource: 'routes/web/routes.yaml'
