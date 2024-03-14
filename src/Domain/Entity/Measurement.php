@@ -9,27 +9,32 @@ class Measurement
 {
     use IdTrait;
 
-    private string $pm10;
-    private string $pm25;
+    private ?int $pm10;
+    private ?int $pm25;
     private Sensor $sensor;
     private DateTimeImmutable $createdAt;
 
-    public function getPm10(): string
+    public function __construct()
+    {
+        $this->createdAt = new DateTimeImmutable();
+    }
+
+    public function getPm10(): ?int
     {
         return $this->pm10;
     }
 
-    public function setPm10(string $pm10): void
+    public function setPm10(?int $pm10): void
     {
         $this->pm10 = $pm10;
     }
 
-    public function getPm25(): string
+    public function getPm25(): ?int
     {
         return $this->pm25;
     }
 
-    public function setPm25(string $pm25): void
+    public function setPm25(?int $pm25): void
     {
         $this->pm25 = $pm25;
     }
@@ -52,10 +57,5 @@ class Measurement
     public function setCreatedAt(DateTimeImmutable $createdAt): void
     {
         $this->createdAt = $createdAt;
-    }
-
-    public function onPrePersist(): void
-    {
-        $this->createdAt = new DateTimeImmutable();
     }
 }

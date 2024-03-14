@@ -7,5 +7,5 @@ use App\Domain\Entity\Sensor;
 
 interface GenerateMeasurementFixturesInterface
 {
-    public function getMeasurement(Sensor $sensor, string $pm10, string $pm25): ?Measurement;
+    public function addMeasurement(Sensor $sensor, int $count, int $interval): void;
 }
