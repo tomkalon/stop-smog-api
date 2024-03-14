@@ -1,0 +1,5 @@
+ui:
+  nav:
+    cities: Miasta
+    sensors: Czujniki
+    logout: Wyloguj się

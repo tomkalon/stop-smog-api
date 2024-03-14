@@ -1,0 +1,8 @@
+a.nav-link {
+  &:hover, &:active, &:visited {
+    color: #eeeeee;
+  }
+}
+
+
+@import 'bootstrap';
