@@ -10,6 +10,12 @@
         </id>
 
         <field name="name" />
+        <many-to-one field="city" inversed-by="sensors" target-entity="City">
+            <cascade>
+                <cascade-persist/>
+            </cascade>
+            <join-column name="city_id" referenced-column-name="id" on-delete="CASCADE" />
+        </many-to-one>
         <field name="address" />
         <one-to-many field="measurements" target-entity="Measurement" mapped-by="sensor" orphan-removal="true" />
 

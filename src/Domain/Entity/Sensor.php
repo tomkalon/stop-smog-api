@@ -12,6 +12,7 @@ class Sensor
     use LifecycleTrait;
 
     private string $name;
+    private City $city;
     private string $address;
     private Collection $measurements;
 
@@ -23,6 +24,16 @@ class Sensor
     public function setName(string $name): void
     {
         $this->name = $name;
+    }
+
+    public function getCity(): City
+    {
+        return $this->city;
+    }
+
+    public function setCity(City $city): void
+    {
+        $this->city = $city;
     }
 
     public function getAddress(): string
