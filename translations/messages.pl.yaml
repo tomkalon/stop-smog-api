@@ -1,4 +1,6 @@
 ui:
+  title:
+    login: Logowanie
   nav:
     cities: Miasta
     sensors: Czujniki

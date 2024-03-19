@@ -1,12 +1,12 @@
+{% if is_granted('ROLE_ADMIN') %}
 <header class="mb-auto">
     <div>
         <h3 class="float-md-start mb-0">{{ app_name }}</h3>
-        {% if is_granted('ROLE_ADMIN') %}
             <nav class="nav nav-masthead justify-content-center float-md-end">
                 <a class="nav-link fw-bold py-1 px-0" aria-current="page" href="#">{{ 'ui.nav.cities'|trans }}</a>
                 <a class="nav-link fw-bold py-1 px-0" href="#">{{ 'ui.nav.sensors'|trans }}</a>
                 <a class="nav-link fw-bold py-1 px-0" href="#">{{ 'ui.nav.logout'|trans }}</a>
             </nav>
-        {% endif %}
     </div>
 </header>
+{% endif %}
