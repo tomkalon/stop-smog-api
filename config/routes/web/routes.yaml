@@ -1,3 +1,7 @@
+user_routes:
+  resource: 'user'
+  type: directory
+
 sensor_management_routes:
   resource: 'sensor_management'
   type: directory

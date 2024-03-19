@@ -1,7 +1,14 @@
 ui:
-  title:
-    login: Logowanie
   nav:
     cities: Miasta
     sensors: Czujniki
     logout: Wyloguj się
+  user:
+    admin:
+      label: Panel Administratora
+    login:
+      label: Logowanie
+      login: Zaloguj się
+    email: Adres email
+    password: Hasło
+    remember_me: Zapamiętaj mnie
