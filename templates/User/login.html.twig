@@ -2,8 +2,8 @@
 {% block title %}{{ app_name }} - {{ 'ui.user.login.label'|trans }}{% endblock %}
 
 {% block body %}
-    <main class="mt-5 w-100 m-auto">
-        <form action="{{ path('app_login') }}" class="space-y-6" method="post">
+    <main id="app-login" class="container mt-5 m-auto d-flex justify-content-center">
+        <form action="{{ path('app_login') }}" class="space-y-6 flex-grow-1" method="post">
             {% if error %}
                 <div class="alert alert-danger d-flex align-items-center justify-content-center" role="alert">
                     <svg class="fill-current" style="width: 20px; height: 20px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">

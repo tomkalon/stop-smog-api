@@ -11,8 +11,7 @@
             {% block importmap %}{{ importmap('app') }}{% endblock %}
         {% endblock %}
     </head>
-    <body class="d-flex h-100 text-center">
-        <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    <body>
             <!-- Top Navigation -->
             {% include 'nav.html.twig' %}
 
@@ -21,6 +20,5 @@
 
             <!-- Footer -->
             {% include 'footer.html.twig' %}
-        </div>
     </body>
 </html>

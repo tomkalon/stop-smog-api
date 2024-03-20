@@ -1,8 +1,25 @@
-a.nav-link {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+body {
+  font-family: "Poppins", sans-serif!important;
+}
+
+a {
+  color: #eeeeee!important;
+  text-decoration: none!important;
+
   &:hover, &:active, &:visited {
-    color: #eeeeee;
+    text-decoration: none!important;
+    color: #dddddd!important;
   }
 }
 
+#top-menu {
+  gap: 1rem;
+}
 
-@import 'bootstrap';
+#app-login {
+  form {
+    max-width: 600px;
+  }
+}
