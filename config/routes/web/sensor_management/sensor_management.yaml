@@ -1,6 +1,9 @@
 admin_web_sensor_index:
-  path: /admin/sensor/{page<\d+>}
-  methods: [ GET, POST ]
+  path: /admin/sensor
+  methods: [ GET ]
   controller: App\UI\Web\Controller\SensorManagement\SensorManagementController::index
-  defaults:
-    page: 1
+
+admin_web_sensor_show:
+  path: /admin/sensor/show/{id<\d+>}
+  methods: [ GET ]
+  controller: App\UI\Web\Controller\SensorManagement\SensorManagementController::show

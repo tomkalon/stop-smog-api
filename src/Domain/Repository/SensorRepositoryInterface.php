@@ -12,5 +12,5 @@ use App\Domain\Entity\Sensor;
  */
 interface SensorRepositoryInterface
 {
-
+    public function listAll(): array;
 }

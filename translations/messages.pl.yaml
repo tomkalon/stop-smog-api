@@ -3,6 +3,11 @@ ui:
     cities: Miasta
     sensors: Czujniki
     logout: Wyloguj się
+  buttons:
+    add: Dodaj
+    show: Pokaż
+    edit: Edytuj
+    remove: Usuń
   user:
     admin:
       label: Panel Administratora
@@ -14,4 +19,10 @@ ui:
     password: Hasło
     remember_me: Zapamiętaj mnie
   sensor:
-    label: Sensor Management
+    label: Zarządzanie czujnikami
+    list: Lista czujników
+    show: Szczegóły czujnika
+    name: Nazwa
+    city: Miejscowość
+    address: Adres
+    

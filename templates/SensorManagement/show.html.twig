@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+{% block title %}{{ app_name }} - {{ 'ui.sensor.label'|trans }}{% endblock %}
+
+{% block body %}
+    <div class="container mt-3">
+        <h1>{{ 'ui.sensor.show'|trans }}</h1>
+        <hr>
+        <div class="h-100 p-5 bg-body-tertiary border rounded-3">
+            <h2>{{ sensor.name }}</h2>
+            <h3>{{ sensor.city.name }}, {{ sensor.address }}</h3>
+            <div class="pt-4">
+                <button class="btn btn-warning" type="button">{{ 'ui.buttons.edit'|trans }}</button>
+                <button class="btn btn-danger" type="button">{{ 'ui.buttons.remove'|trans }}</button>
+            </div>
+        </div>
+    </div>
+{% endblock %}

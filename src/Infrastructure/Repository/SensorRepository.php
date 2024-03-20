@@ -13,4 +13,15 @@ class SensorRepository extends ServiceEntityRepository implements SensorReposito
     {
         parent::__construct($registry, Sensor::class);
     }
+
+
+    public function listAll(): array
+    {
+        $qb = $this->createQueryBuilder('s');
+        $qb
+            ->addSelect('city')
+            ->leftJoin('s.city', 'city');
+
+        return $qb->getQuery()->getResult();
+    }
 }
