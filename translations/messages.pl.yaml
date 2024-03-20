@@ -6,9 +6,12 @@ ui:
   user:
     admin:
       label: Panel Administratora
+      content: Witaj w panelu administratora!
     login:
       label: Logowanie
       login: Zaloguj się
     email: Adres email
     password: Hasło
     remember_me: Zapamiętaj mnie
+  sensor:
+    label: Sensor Management
